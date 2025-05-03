@@ -1,12 +1,26 @@
 {
+  "publisher": "BhanukaIsuru",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhanuka96/code-concat-ai"
+  },
+  "bugs": {
+    "url": "https://github.com/bhanuka96/code-concat-ai/issues"
+  },
+  "homepage": "https://github.com/bhanuka96/code-concat-ai",
   "name": "code-concat-ai",
   "displayName": "Code Concat AI",
   "description": "Concatenate multiple code files into one LLM‑ready file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.99.0"
   },
   "main": "./dist/extension.js",
+  "activationEvents": [
+    "onView:code-concat-ai.fileSelector",
+    "onCommand:code-concat-ai.copyToOne",
+    "onCommand:code-concat-ai.toggleSelect"
+  ],
   "contributes": {
     "commands": [
       {
