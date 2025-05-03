@@ -13,7 +13,7 @@
   "description": "Concatenate multiple code files into one LLM‑ready file",
   "version": "0.0.2",
   "engines": {
-    "vscode": "^1.99.0"
+    "vscode": "^1.96.0"
   },
   "main": "./dist/extension.js",
   "activationEvents": [
