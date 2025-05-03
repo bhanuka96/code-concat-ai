@@ -11,9 +11,9 @@
   "name": "code-concat-ai",
   "displayName": "Code Concat AI",
   "description": "Concatenate multiple code files into one LLM‑ready file",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "engines": {
-    "vscode": "^1.96.0"
+    "vscode": "^1.96.2"
   },
   "main": "./dist/extension.js",
   "activationEvents": [
@@ -69,7 +69,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
-    "@types/vscode": "^1.99.0",
+    "@types/vscode": "^1.96.2",
     "copy-webpack-plugin": "^11.0.0",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
