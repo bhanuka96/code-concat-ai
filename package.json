@@ -8,10 +8,10 @@
     "url": "https://github.com/bhanuka96/code-concat-ai/issues"
   },
   "homepage": "https://github.com/bhanuka96/code-concat-ai",
-  "name": "code-concat-ai",
-  "displayName": "Code Concat AI",
-  "description": "Concatenate multiple code files into one LLM‑ready file",
-  "version": "0.0.4",
+  "name": "code-concat",
+  "displayName": "Code Concat",
+  "description": "Easily concatenate code files for sharing with LLMs or other purposes.",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.96.2"
   },
