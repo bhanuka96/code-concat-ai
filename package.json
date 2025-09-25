@@ -11,15 +11,13 @@
   "name": "code-concat",
   "displayName": "Code Concat",
   "description": "Easily concatenate code files for sharing with LLMs or other purposes.",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.96.2"
   },
   "main": "./dist/extension.js",
   "activationEvents": [
-    "onView:code-concat-ai.fileSelector",
-    "onCommand:code-concat-ai.copyToOne",
-    "onCommand:code-concat-ai.toggleSelect"
+    "onView:code-concat-ai.fileSelector"
   ],
   "contributes": {
     "commands": [

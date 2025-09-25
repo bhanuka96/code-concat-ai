@@ -8,6 +8,14 @@ export function activate(context: vscode.ExtensionContext) {
     provider
   );
 
+  // Set up file system watcher to refresh tree when files change
+  const watcher = vscode.workspace.createFileSystemWatcher('**/*');
+  watcher.onDidCreate(() => provider.refresh());
+  watcher.onDidDelete(() => provider.refresh());
+  watcher.onDidChange(() => provider.refresh());
+
+  context.subscriptions.push(watcher);
+
   // Command: toggle selection when user clicks an item
   context.subscriptions.push(
     vscode.commands.registerCommand(
@@ -54,6 +62,11 @@ class WorkspaceFilesProvider implements vscode.TreeDataProvider<FileItem> {
     if (this.selected.has(key)) this.selected.delete(key);
     else this.selected.add(key);
     this._onDidChangeTreeData.fire();   // refresh entire view
+  }
+
+  // Method to refresh the entire tree
+  refresh(): void {
+    this._onDidChangeTreeData.fire();
   }
 
   // Public getter for the command

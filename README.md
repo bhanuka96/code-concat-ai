@@ -10,6 +10,7 @@
 - ✅ **Easy Selection**: Toggle file selection with checkboxes.
 - 📋 **One-Click Merge**: Combine selected files into a single editor tab.
 - 🔗 **File Headers**: Automatically adds file names as section headers.
+- 🔄 **Auto-Refresh**: Tree view automatically updates when files are added, deleted, or modified.
 
 ---
 
