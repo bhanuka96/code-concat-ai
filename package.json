@@ -8,8 +8,8 @@
     "url": "https://github.com/bhanuka96/code-concat-ai/issues"
   },
   "homepage": "https://github.com/bhanuka96/code-concat-ai",
-  "name": "code-concat",
-  "displayName": "Code Concat",
+  "name": "code-concat-ai",
+  "displayName": "Code Concat For AI",
   "description": "Easily concatenate code files for sharing with LLMs or other purposes.",
   "version": "0.0.7",
   "engines": {
